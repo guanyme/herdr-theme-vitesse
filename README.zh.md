@@ -1,6 +1,6 @@
 # herdr-theme-vitesse
 
-🎨 适用于 [Herdr](https://herdr.dev) 桌面应用的 [Vitesse](https://github.com/antfu/vscode-theme-vitesse) 深色和浅色主题
+🎨 适用于 Herdr 桌面应用的 Vitesse 深色和浅色主题
 
 ## 安装
 

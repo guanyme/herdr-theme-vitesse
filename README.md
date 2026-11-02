@@ -1,6 +1,6 @@
 # herdr-theme-vitesse
 
-🎨 [Vitesse](https://github.com/antfu/vscode-theme-vitesse) dark and light themes for the [Herdr](https://herdr.dev) desktop app
+🎨 Vitesse dark and light themes for the Herdr desktop app
 
 ## Install
 
