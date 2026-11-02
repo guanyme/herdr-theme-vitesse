@@ -45,20 +45,29 @@ To set them as the default for layouts without a theme, add this to `settings.js
 
 Herdr themes only accept opaque `#rrggbb` colors, so Vitesse's translucent colors are blended onto its background. Terminal colors come from Vitesse's `terminal.*` values, and panel colors map as follows:
 
-| Herdr                             | Vitesse                              |
-| --------------------------------- | ------------------------------------ |
-| `canvas`, `surface`               | `editor.background`                  |
-| `chrome`                          | `sideBar.background`                 |
-| `popover`, `raised`, `hover`      | `list.hoverBackground`               |
-| `selected`                        | `list.activeSelectionBackground`     |
-| `border`                          | `panel.border`                       |
-| `muted`                           | `descriptionForeground`              |
-| `dim`, `input`, `idle`, `unknown` | `editorLineNumber.foreground`        |
-| `accent`, `solid`, `ring`         | `button.background`                  |
-| `accent_foreground`, `solid_foreground` | `button.foreground`            |
-| `working`                         | `editorWarning.foreground`           |
-| `blocked`                         | `errorForeground`                    |
-| `done`                            | `gitDecoration.addedResourceForeground` |
+| Herdr                                   | Vitesse                                 |
+| --------------------------------------- | --------------------------------------- |
+| `canvas`, `surface`                     | `editor.background`                     |
+| `chrome`                                | `sideBar.background`                    |
+| `popover`, `raised`, `hover`            | `list.hoverBackground`                  |
+| `selected`                              | `list.activeSelectionBackground`        |
+| `border`                                | `panel.border`                          |
+| `muted`                                 | `descriptionForeground`                 |
+| `dim`, `input`, `idle`, `unknown`       | `editorLineNumber.foreground`           |
+| `accent`, `solid`, `ring`               | `button.background`                     |
+| `accent_foreground`, `solid_foreground` | `button.foreground`                     |
+| `working`                               | `editorWarning.foreground`              |
+| `blocked`                               | `errorForeground`                       |
+| `done`                                  | `gitDecoration.addedResourceForeground` |
+
+### Build
+
+The themes are generated from the [`theme-vitesse`](https://www.npmjs.com/package/theme-vitesse) package. After updating it, regenerate them:
+
+```bash
+pnpm install
+pnpm build
+```
 
 ## License
 

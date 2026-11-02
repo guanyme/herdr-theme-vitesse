@@ -45,20 +45,29 @@ herdr-app do app.theme --name vitesse-light
 
 Herdr 主题只接受不透明的 `#rrggbb` 颜色，所以 Vitesse 的半透明颜色都和它的背景色合成过。终端颜色来自 Vitesse 的 `terminal.*`，面板颜色的对应关系如下：
 
-| Herdr                             | Vitesse                              |
-| --------------------------------- | ------------------------------------ |
-| `canvas`、`surface`               | `editor.background`                  |
-| `chrome`                          | `sideBar.background`                 |
-| `popover`、`raised`、`hover`      | `list.hoverBackground`               |
-| `selected`                        | `list.activeSelectionBackground`     |
-| `border`                          | `panel.border`                       |
-| `muted`                           | `descriptionForeground`              |
-| `dim`、`input`、`idle`、`unknown` | `editorLineNumber.foreground`        |
-| `accent`、`solid`、`ring`         | `button.background`                  |
-| `accent_foreground`、`solid_foreground` | `button.foreground`            |
-| `working`                         | `editorWarning.foreground`           |
-| `blocked`                         | `errorForeground`                    |
-| `done`                            | `gitDecoration.addedResourceForeground` |
+| Herdr                                   | Vitesse                                 |
+| --------------------------------------- | --------------------------------------- |
+| `canvas`、`surface`                     | `editor.background`                     |
+| `chrome`                                | `sideBar.background`                    |
+| `popover`、`raised`、`hover`            | `list.hoverBackground`                  |
+| `selected`                              | `list.activeSelectionBackground`        |
+| `border`                                | `panel.border`                          |
+| `muted`                                 | `descriptionForeground`                 |
+| `dim`、`input`、`idle`、`unknown`       | `editorLineNumber.foreground`           |
+| `accent`、`solid`、`ring`               | `button.background`                     |
+| `accent_foreground`、`solid_foreground` | `button.foreground`                     |
+| `working`                               | `editorWarning.foreground`              |
+| `blocked`                               | `errorForeground`                       |
+| `done`                                  | `gitDecoration.addedResourceForeground` |
+
+### 构建
+
+主题由 [`theme-vitesse`](https://www.npmjs.com/package/theme-vitesse) 包生成。更新这个包后重新生成：
+
+```bash
+pnpm install
+pnpm build
+```
 
 ## 使用许可
 

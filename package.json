@@ -1,0 +1,15 @@
+{
+  "name": "herdr-theme-vitesse",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "format": "oxfmt .",
+    "check": "oxfmt --check ."
+  },
+  "devDependencies": {
+    "oxfmt": "0.72.0",
+    "theme-vitesse": "1.0.0"
+  },
+  "packageManager": "pnpm@12.16.1"
+}
